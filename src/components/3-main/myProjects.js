@@ -1,3 +1,5 @@
+import { FaGithub } from "react-icons/fa";
+
 export const myProjects = [
   {
     projectTitle: " E-commerce for library",
@@ -7,6 +9,7 @@ export const myProjects = [
       "This innovative web application is designed to facilitate buying and selling products. You can pay using bank cards and mobile wallets!",
     ],
     url: "https://daralkarasa-eg.com/",
+    github:"https://daralkarasa-eg.com/",
   },
   {
     projectTitle: "Amazon clone using react ",
@@ -72,7 +75,7 @@ url: "https://portfolio-html-css-ashy.vercel.app/",
 ],
 url: "https://turbo-website-beta.vercel.app/#",
 },
-  { projectTitle: "Turbo Website",
+  { projectTitle: "Dashboard",
      category: ["html","css"],
       imgPath: "/images/10.PNG",
       projectDescription:[" website showcases the app’s features, benefits, and call-to-action sections in a visually appealing and user-friendly manner.",

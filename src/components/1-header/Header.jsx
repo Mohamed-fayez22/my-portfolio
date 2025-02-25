@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import "./header.css";
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { FaRegMoon } from "react-icons/fa";
+import { LuSun } from "react-icons/lu";
+import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 const Header = () => {
   const [showModal, setshowModal] = useState(false);
   const [theme, setTheme] = useState(
@@ -18,13 +21,15 @@ const Header = () => {
   }, [theme]);
 
   return (
-    <header className="  flex">
+    <header className=" flex">
       <button
         onClick={() => {
           setshowModal(true);
         }}
-        className="menu icon-menu flex"
+        className="menu flex "
       >
+     <IoMenuOutline  className="icon-menu"/>
+
         {" "}
       </button>
       <div />
@@ -57,9 +62,9 @@ const Header = () => {
         className="mode flex"
       >
         {theme === "dark" ? (
-          <span className="icon-moon-o"> </span>
+          <span> <FaRegMoon  className="icon-moon"/></span>
         ) : (
-          <span className="icon-sun"> </span>
+          <span><LuSun className="icon-sun"/> </span>
         )}
       </button>
 
@@ -67,12 +72,10 @@ const Header = () => {
         <div className="fixed">
           <ul className="modal ">
             <li>
-              <button
-                className="icon-close"
-                onClick={() => {
+           
+                 <IoCloseOutline     onClick={() => {
                   setshowModal(false);
-                }}
-              />
+                }} className="icon-close" />
             </li>
             <li>
             <a href="#hero">About</a>

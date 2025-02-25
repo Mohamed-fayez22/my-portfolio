@@ -3,15 +3,15 @@ import { useForm, ValidationError } from "@formspree/react";
 import Lottie from "lottie-react";
 import doneAnimation from "../../animation/done.json";
 import contactAnimation from "../../animation/contact.json";
-
+import { IoMdMail } from "react-icons/io";
 const Contact = () => {
   const [state, handleSubmit] = useForm("xeoerqdl");
 
   return (
     <section className="contact-us" id="contact">
       <h1 className="title">
-        <span className="icon-mail"> </span>
-        Contact us
+      <span><IoMdMail className="icon-mail" /> </span>
+      Contact us
       </h1>
       <p className="sub-title">
         Contact us for more information and Get notified when I publish

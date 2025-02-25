@@ -3,7 +3,9 @@ import "./hero.css";
 import devAnimation from "../../animation/dev.json";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-
+import { RiVerifiedBadgeFill } from "react-icons/ri";
+import { FaGithub , FaInstagram , FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 const Hero = () => {
   const lottieRef = useRef();
 
@@ -19,7 +21,7 @@ const Hero = () => {
             className="avatar"
             alt=""
           />
-          <div className="icon-verified"></div>
+          <div ><RiVerifiedBadgeFill className="verified" /></div>
         </div>
 
         <motion.h1
@@ -42,17 +44,16 @@ const Hero = () => {
 
         <div className="all-icons flex">
           <a href="https://github.com/Mohamed-fayez22" target="_blank">
-            <div className="icon icon-github" />
+          <FaGithub className="icon" />
           </a>
           <a href="www.linkedin.com/in/mohamed-fayez-59156a252" target="_blank">
-            <div className="icon icon-linkedin" />
+          <FaLinkedin className="icon"/>
           </a>
           <a href="https://www.instagram.com/mo_fayez_10/" target="_blank">
-            <div className="icon icon-instagram" />
+          <FaInstagram className="icon"/>
           </a>
           <a href="tel:+201157201406" target="_blank">
-          
-            <div className="icon icon-whatsapp" />
+          <FaWhatsapp className="icon"/>
           </a>
         </div>
       </div>

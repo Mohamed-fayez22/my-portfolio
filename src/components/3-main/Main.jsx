@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./main.css";
 import { myProjects } from "./myProjects";
 import { AnimatePresence, motion } from "framer-motion";
-
+import { FaArrowRight } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 const Main = () => {
   const [currentActive, setcurrentActive] = useState("all");
   const [arr, setArr] = useState(myProjects);
@@ -95,16 +96,15 @@ const Main = () => {
 
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
-                      <div className="icon-link"></div>
-                      <div className="icon-github"></div>
+                      <div ></div>
+                      <div ><FaGithub /></div>
                     </div>
 
                     <a className="link flex" href={item.url} target="_blank">
                      See Live 
                       <span
                         style={{ alignSelf: "end" }}
-                        className="icon-arrow-right"
-                      ></span>
+                      ><FaArrowRight  className="arrow"/></span>
                     </a>
                   </div>
                 </div>

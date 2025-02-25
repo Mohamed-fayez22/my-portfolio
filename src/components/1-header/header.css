@@ -50,24 +50,29 @@ header button.menu {
 /* ========================
     2. Button & icon
 =========================== */
-header .icon-menu,
-header button.mode {
+
+header button.mode,
+header .icon-menu {
   background-color: var(--bgHeader);
   height: 2.4rem;
   width: 2.4rem;
-  border-radius: 50%;
-
+  display: flex;
   justify-content: center;
-  text-align: center;
-
+  border-radius: 50%;
   color: var(--subtitle);
   border: 1px solid rgba(244, 165, 96, 0.249);
   transition: 0.2s;
   box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
 }
+header .icon-moon{
+  display: flex;
+  justify-content: center;
+}
 
 header .icon-sun {
   color: rgb(255, 165, 0);
+ display: flex;
+ justify-content: center;
 }
 
 header .icon-menu:hover,
@@ -160,4 +165,5 @@ header .fixed ul.modal li a {
   header button.menu {
     display: block;
   }
+
 }

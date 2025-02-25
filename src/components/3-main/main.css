@@ -130,6 +130,9 @@ main section.right-section.flex {
   color: var(--blue);
   margin-right: 12px;
 }
+.card .arrow{
+  padding: 5px;
+}
 
 /* =====================================
   3- Responsive Design (media query)
