@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 
 export const myProjects = [
   {
-    projectTitle: " E-commerce for library",
+    projectTitle: "Alkarasa Library",
     category: ["wordpress"],
     imgPath: "/images/1.PNG",
     projectDescription: [
@@ -10,6 +10,16 @@ export const myProjects = [
     ],
     url: "https://daralkarasa-eg.com/",
     github:"https://daralkarasa-eg.com/",
+  },
+  {
+    projectTitle: " Online Store for Furniture & Home Appliances",
+    category: ["wordpress"],
+    imgPath: "/images/11.PNG",
+    projectDescription: [
+      "A full-featured e-commerce website for a client specializing in furniture and home appliances. The platform allows customers to seamlessly browse a wide range of products",
+    ],
+    url: "https://gawhara.store/",
+    github:"https://gawhara.store/",
   },
   {
     projectTitle: "Amazon clone using react ",
