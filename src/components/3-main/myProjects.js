@@ -22,6 +22,16 @@ export const myProjects = [
     github:"https://gawhara.store/",
   },
   {
+    projectTitle: " DevHub – Corporate Profile Website",
+    category: ["wordpress"],
+    imgPath: "/images/12.PNG",
+    projectDescription: [
+      "This project is a responsive company profile website designed to introduce the company, highlight its services, and provide visitors with easy ways to get in touch ",
+    ],
+    url: "https://indigo-chamois-935939.hostingersite.com/",
+    github:"https://indigo-chamois-935939.hostingersite.com/",
+  },
+  {
     projectTitle: "Amazon clone using react ",
     category: ["react"],
     imgPath: "/images/2.PNG",
